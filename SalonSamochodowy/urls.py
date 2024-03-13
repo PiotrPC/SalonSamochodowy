@@ -14,7 +14,6 @@ def trigger_error(request):
 #
 # '2' + 2
 
-
 urlpatterns = [
     path('admin/', admin.site.urls),
     # path('', cars, name='cars'),
