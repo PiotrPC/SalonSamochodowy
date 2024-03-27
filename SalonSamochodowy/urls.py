@@ -18,6 +18,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     # path('', cars, name='cars'),
     path('sentry-debug/', trigger_error),
+    path('book/<int:pl>/', BookDeatilsViev.as_view(), name="book-deatail"),
               ]
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
